@@ -124,6 +124,15 @@ body, * {
   font-weight: 700;
 }
 
+.product {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 3fr) 1fr;
+}
+
+.product__img {
+  justify-self: center;
+}
+
 .cart-header {
   padding: 22px 0;
   background-color: #eaeff2;
@@ -137,6 +146,20 @@ body, * {
 }
 
 .cart-header__title {
+  grid-column-start: 2;
+}
+
+.cart-footer {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  padding: 19px 0;
+  background-color: #eaeff2;
+  display: grid;
+  grid-template-columns: 5fr 3fr 4fr;
+}
+
+.cart-footer__count {
   grid-column-start: 2;
 }
 
