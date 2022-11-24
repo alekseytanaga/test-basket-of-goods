@@ -4,10 +4,24 @@
     line-height: 1.2;
     padding: 19px 0;
     background-color: #eaeff2;
-    
+    column-gap: 30px;
     display: grid;
     grid-template-columns: 5fr 3fr 4fr;
+
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr 1fr;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    @media (max-width: $mobile-xs) {
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+    }
 }
 .cart-footer__count {
     grid-column-start: 2;
+
+    @media (max-width: $mobile) {
+        grid-column-start: 1;
+    }
 }
